@@ -1,0 +1,755 @@
+* { box-sizing: border-box; }
+
+body {
+    width: 100%;
+    background-color: #003300;
+    color: #000000;
+    font-family: Helvetica, "Century Gothic", sans-serif; }
+    
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-color: #33cccc;
+    min-width: 1200px;
+    max-width: 1480px; }
+
+header {
+    height: 150px;
+    background-color: #30425D; }
+
+header h1 { padding: 25px 0px 0px 2em; }
+
+.logo img:hover { opacity: .5; }
+
+main { padding: 2em 0em 1em 0em; }
+
+/* ----All Navigation Settings---- */
+
+nav {  
+    background-color: #cc0066; 
+    letter-spacing: 0.2em;       
+    text-align: right; 
+    padding: 1em;
+    position: relative; }
+
+nav ul { 
+    list-style-type: none; 
+    margin: 0; }
+
+nav ul ul { 
+        position: absolute; 
+        background-color: #555555; 
+        border: 4px solid #000000;
+        border-radius: 5px;
+		padding: 0; 
+        font-size: 1em;
+		text-align: center; 
+        display: none;
+        z-index: 1; }
+
+nav ul ul li { 
+    width: 125px;
+    border: 8px solid #8EAEBD; 
+    display: block; 
+    padding: 2em 1em 2em 1em; 
+    font-size: .5em; }
+
+nav li:hover ul { 
+    display: block; }
+
+nav li { 
+    padding: .5em;
+    display: inline-block; }
+
+nav a { 
+    text-decoration: none; 
+    display: block; }
+
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #FFFFFF; }
+nav a:hover { color: #000000; }
+
+/* --- Home Page Content Settings --- */
+
+#homePageBoxes {
+    text-align: center; 
+    vertical-align: top;
+    display: block; }
+
+#homePageBoxes section {
+    width: 40%;
+    height: 325px;
+    font-size: 1.1em;
+    border: 3px ridge #000000;
+    border-radius: 15px;
+    background-color: #CF6766; }
+
+#homePageBoxes a {
+    text-decoration: none;
+    color: #000000;
+    margin: auto; }
+
+#homePageBoxes a:hover { 
+    opacity: .5; }
+
+.homePageDisplay2 a:hover {
+    opacity: .5; }
+
+#centeringOptions, section {
+    margin: 1em;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center; }
+
+.homePageDisplay1 {
+    text-align: center;
+    background-image: url(banner_photos/education.jpg);
+    background-size: cover; }
+
+
+
+.homePageDisplay2 {
+    text-align: center;
+    background-image: url(banner_photos/vectorstock.jpg);
+    background-size: cover; }
+	
+.homePageDisplay2 img {
+    width: 40%;
+    height: auto;
+}
+/* --- Home Page Button Settings --- */
+
+.buttons a { 
+    vertical-align: top;
+    display: inline-block; 
+    width: 300px;
+    border: none;
+    border-radius: 8px; 
+    color: #FFFFFF;
+    padding: 20px 75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 1em 0em 1em 0em; 
+    transition-duration: .4s; }
+
+.astroButton a {
+    background-image: url(banner_photos/astro_button.jpg) }
+
+.chemButton a {
+    background-image: url(banner_photos/chem_button.jpg); }
+
+.electronicsButton a {
+    background-image: url(banner_photos/small_circuit.jpg); }
+
+.engineerButton a {
+    background-image: url(banner_photos/engineer_button1.jpg); }
+
+.physicsButton a {
+    background-image: url(banner_photos/launch_pad.jpg) }
+
+.astroButton a:hover {
+    background-image: none;
+    transition: .4s; 
+    background-color: #8EAEBD;
+    color: #000000;
+    border: 2px solid #4CAF50; }
+
+.chemButton a:hover {
+    background-image: none;
+    transition: .4s; 
+    background-color: #8EAEBD;
+    color: #000000;
+    border: 2px solid #cc0000; }
+
+.electronicsButton a:hover {
+    background-image: none;
+    transition: .4s; 
+    background-color: #8EAEBD;
+    color: #000000;
+    border: 2px solid #E7E7E7; }
+
+.engineerButton a:hover {
+    background-image: none;
+    transition: .4s; 
+    background-color: #8EAEBD;
+    color: #000000;
+    border: 2px solid #0000cc; }
+
+.physicsButton a:hover {
+    background-image: none;
+    transition: .4s; 
+    background-color: #8EAEBD;
+    color: #000000;
+    border: 2px solid #b300b3; }
+
+#aboutUsHomePage {
+    vertical-align: top;
+    display: inline-block;
+    margin: 4em 0em 2em 5%;
+    border: 3px ridge #000000;
+    border-radius: 10px;
+    background-color: #cc0066;
+    color: #000000;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 1.2px; 
+    line-height: 1.5em; 
+    font-size: 1.1em;
+    padding: .5em 3em .5em 3em; }
+
+#newsLetterDisplay {
+    margin: 3em auto 1.5em auto; 
+    position: relative;
+    border: 3px ridge #000000;
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+    background-image: url(banner_photos/hubbleGalaxy.png); }
+
+#newsLetterOverlay {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: .5em;
+    opacity: 0.9;
+    color: #FFFFFF;
+    font-family: Monaco;
+    font-size: 1em; }
+
+#newsLetterOverlay a {
+    text-decoration: none; }
+
+.heroHyperlinks img:hover {
+    opacity: .5; }
+
+main p { margin-right: 125px; }
+
+aside p { margin: 10px; }
+
+#engineerBottomParagraph {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: #cc0066;
+    border: 3px ridge #000000;
+    border-radius: 10px;
+    letter-spacing: 1px; 
+    line-height: 1.5em; 
+    font-size: 1.1em;
+    padding: .5em 3em .5em 3em;
+    text-align: center; }
+
+/* --- Hero Settings --- */
+
+.heroStyle a {
+    color: #000000;
+    text-decoration: none; }
+
+.heroStyle:hover {
+    opacity: .5; }
+
+.homePageHeroBanner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    border: 3px ridge #000000;
+    border-radius: 10px;
+    width: 95%;
+    height: 400px; 
+    background-image: url(banner_photos/earth_2.jpg) }
+
+#astroBanner {
+    color: #FFFFFF;
+    background-image: url(banner_photos/hubbleGalaxy.png); }
+
+#chemistryBanner {
+    color: #FFFFFF;
+    background-image: url(banner_photos/chem_1.jpg); }
+
+#chemistryBanner h2 {
+    font-size: 2.3em; }
+
+#electronicsBanner {
+    color: #FFFFFF;
+    background-image: url(banner_photos/circuit_banner.jpg) }
+
+#engineeringBanner {
+    color: #FFFFFF;
+    background-image: url(banner_photos/bolts.jpg) }
+
+#physicsBanner {
+    color: #FFFFFF;
+    background-image: url(banner_photos/ring.jpg) }
+
+.heroBanner {
+    margin: 0em auto 3em auto; 
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    border: 3px ridge #000000;
+    border-radius: 10px;
+    width: 90%;
+    height: 250px; }
+
+#overlayTextHero {
+    position: absolute;
+    width: 100%;
+    opacity: .9;
+    font-family: Monaco; }
+
+#overlayTextHero h1 {
+    font-size: 3.7em; }
+
+#overlayTextHero h2 {
+    font-size: .9em; }
+
+#homePageTitle h2 {
+    font-size: 5em;
+    color: #FFFFFF; }
+
+.sideTextBoxL1 {
+    display: inline-block;
+    float: left;
+    border: 3px ridge #000000;
+    border-radius: 15px;
+    margin: 2em 0em 6em 7%;
+    width: 20%;
+    height: 100%;
+    font-size: 1em;
+    text-align: center;
+    background-color: #A5A5AF; }
+
+#astroSide {
+    padding: .4em 1.5em 2em 1.5em; }
+
+#physicsSide {    
+    padding: .5em 1.7em 2em 1.7em; }
+
+#physicsSide h3 {
+    font-size: 1.5em; }
+
+.pictureDisplayL1 {
+    padding-top: 1em;
+    height: 150px;
+    width: auto; }
+
+
+
+
+
+.shop {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    padding: 1em; }
+
+.shop img:hover {
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .5; }
+
+/* --- Level 2 Settings --- */
+
+#sideTextBoxL2 {
+    padding: 2.5em 1.5em 3em 1.5em;
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    border: 3px ridge #000000;
+    border-radius: 15px;
+    width: 20%;
+    margin: 0em 5% 2em 0em;
+    text-align: center;
+    background-color: #A5A5AF; }
+
+#sideTextBoxL2 h3 {
+    font-size: 1.4em; }
+
+#sideTextBoxL2 p {
+    padding-bottom: 1em; }
+
+#productDisplayL2 {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0em 0em 2em 5%;
+    width: 65%;
+    padding: 2em;
+    font-size: 1em;
+    border: 3px ridge #000000;
+    border-radius: 15px;
+    background-color: #CF6766; }
+
+.productPictureL2 {
+    float: right;
+    width: 45%;
+    height: auto;
+    padding: 2em 0em 0em 4em; }
+
+#productDisplayL2 h3 {
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold; }
+
+#productDisplayL2 h4 {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold; }
+
+#productDisplayL2 h5 {
+    text-align: left;
+    font-size: 1em; }
+
+#productDisplayL2 p {
+    text-align: left;
+    padding: 1em 0em 1em 0em; } 
+
+/* --- Level 2 "Other Suggestion" Settings --- */
+
+.otherSuggestions section{
+    margin-left: 60px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #B82601;
+    height: 325px;
+    width: 325px; 
+    text-align: center; 
+    border: 2px ridge #000000;
+    border-radius: 15px; 
+    opacity: .9; }
+
+.otherSuggestions section img{
+    width: 55%;
+    height: auto; }
+
+.otherSuggestions img:hover {
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .5; }
+
+/* --- "Sign Up" Page Settings --- */
+
+label {
+    float: left;
+    display: block;
+    width: 8em; 
+    padding-right: 1.5em; }
+
+input, textarea {
+    align-content: center;
+    width: 200px;
+    display: block;
+    margin-bottom: 1em; }
+
+#mySubmit {
+    margin-top: 25px;
+    width: 100px;
+    margin-left: 180px; }
+
+#signUpDisplay {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 55%;
+    padding: 2em 0em 2em 0em; 
+    font-size: 1em;
+    border: 2px ridge #000000;
+    border-radius: 15px;
+    background-color: #CF6766;
+    opacity: .9; }
+
+#signUpDisplay h2 {
+    text-align: center;
+    font-family: Monaco;
+    font-size: 1.5em; }
+
+#signUpDisplay h3 {
+    text-align: center; }
+
+#signUpDisplay form, label {
+    margin-left: 10%; 
+    text-align: center; }
+
+
+#signUpWrapper {
+    background-image: url(banner_photos/282%20copy.jpg); 
+    background-size: cover; }
+
+
+/* --- Font Classes --- */
+
+.signiture {
+    font-weight: bold;
+    font-style: italic;
+    font: "Gill Sans", Sans-Serif; }
+
+.starter {
+    font-style: italic;
+    font-size: 1.7em; }
+
+.maxwell {
+    font-style: italic;
+    font-family: "Arial Black", Gadget, sans-serif; }
+
+footer {
+    clear: both;
+    background-color: #30425D;
+    padding: 2em;
+    font-size: .80em;
+    font-style: italic;
+    text-align: center; }
+
+#mobile { display: none; }
+
+#desktop { display: inline; }
+
+header, nav, main, footer { display: block; } 
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+#homePageBoxes { display: none; } 
+    
+.sideTextBoxL1 { display: none; }    
+    
+#sideTextBoxL2 { display: none; }
+    
+#overlayTextHero h2 { display: none; }
+    
+#aboutUsHomePage { display: none; }     
+    
+body { margin: 0; padding: 0; }    
+    
+#wrapper {
+	width: 100%;
+	min-width: 100%;
+	max-width: 0;
+	padding: 0; }
+
+header { 
+    height: 85px; 
+    padding-top: 1px; }
+
+header h1 { padding: 0px 0px 0px 2em; }   
+    
+header h1 img { 
+    height: 45px;
+    width: auto; }  
+    
+.homePageHeroBanner {
+    height: 250px; }    
+    
+#homePageTitle h2 {
+    font-size: 4em; }     
+
+/* ----All Navigation Settings---- */
+    
+nav li:hover ul { display: none; } 
+    
+nav {  
+    letter-spacing: 0.2em;       
+    text-align: center; 
+    position: relative; 
+	padding: 0.5em; }
+
+nav ul { 
+    list-style-type: none; 
+    margin: 0; }
+
+/* --- Home Page Content Settings --- */
+    
+.heroBanner {
+    height: 180px;
+    margin-bottom: 0; }    
+
+#overlayTextHero h1 {
+    font-size: 3.3em; }     
+    
+#centeringOptionsAstro, section {
+    margin: 1em;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center; }        
+    
+.buttons a {
+    margin: 0em .5em 0em .5em; }
+      
+#homePageBoxes section {
+    vertical-align: top;
+    display: inline-block;
+    width: 55%;
+    height: 225px;
+    font-size: 1em; }    
+    
+.homePageDisplay1 {
+    margin: 1em 20% 1em 20%; 
+    height: 200px; } 
+	
+.homePageDisplay2 {
+	margin: 1em 25% 1em 25%; 
+	height: 200px; }
+
+.homePageDisplay2 img{
+	width: 25%; }
+    
+#productDisplayL2 {
+    vertical-align: top;
+    display: block;
+    margin: 1.5em auto 0 auto; }   
+    
+#engineerBottomParagraph {
+    letter-spacing: 1px; 
+    font-size: .8em;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+     }    
+
+}
+
+@media only all and (max-width: 768px) {      
+    
+#engineerBottomParagraph { display: none; }    
+   
+.sideTextBoxL1 { display: none; }     
+    
+nav li:hover ul { display: none; }    
+    
+#aboutUsHomePage { display: none; }    
+    
+.otherSuggestions { display: none; }      
+    
+.homePageDisplay2 h3{ display: none; }
+    
+#homePageBoxes section { display: none; }   
+    
+#homePageBoxes { display: none; }  
+    
+#productDisplayL2 p { display: none; }  
+
+#productDisplayL2 h5 { display: none; }    
+
+    
+nav a { 
+	padding: 0.5em;
+	width: 95%;
+	float: left;
+	min-width: 5em; }
+    
+h1 {
+	font-size: 2em;
+	padding-top: 0.25em;
+	padding-left: 1.5em;
+	width: 85%;
+	text-align: center; }  
+    
+header h1 { 
+    padding-top: .5em; 
+    vertical-align: top; 
+    display: inline-block;
+    margin: 0 auto 0 auto; }      
+    
+#overlayTextHero h1 { 
+    text-align: center; 
+    font-size: 2.5em; }     
+
+.homePageHeroBanner { height: 250px; }    
+    
+#homePageTitle h2 { font-size: 3em; } 
+    
+.heroBanner { 
+    height: 150px;
+    width: 90%; } 
+        
+.buttons a {
+    padding: 1em .3em 1em .3em; }   
+    
+.engineerButton a { font-size: 1.9em; } 
+    
+.shop img { 
+    height: 125px;
+    width: auto; }    
+    
+.shop {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 auto 0 auto; 
+    text-align: center;
+    width: 50%;
+    padding: 0; }   
+    
+#centeringOptionsAstro section {
+    margin: 1em;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center; }  
+
+.pictureDisplayL1 {
+    padding-top: 0;
+    height: 125px;
+    width: auto; }    
+
+#productDisplayL2 h3 {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-style: bold; }   
+
+#productDisplayL2 h4 {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold; }
+    
+#productDisplayL2 form {
+    display: inline-block;
+    margin: 0 auto 0 auto; }    
+    
+.productPictureL2 { 
+    width: 175px; 
+    height: auto;
+    padding: 0; }   
+    
+.productPictureL2 {
+    float: none; 
+    vertical-align: top;
+    display: inline-block; }    
+    
+#signUpDisplay {
+    width: 75%;
+    font-size: 1em; }
+
+#signUpDisplay h2 {
+    font-size: 1em; }
+
+#signUpDisplay h3 {
+    font-size: .6em; }
+
+#signUpDisplay form, label {
+    text-align: left; }   
+    
+#mySubmit {
+    margin-top: 25px;
+    width: 80px; }    
+    
+footer { 
+    padding: .5em; 
+    margin: 0;
+    font-size: .6em; }
+
+#newsLetterDisplay {
+    margin-top: 1.3em;
+    height: 150px; }
+    
+#newsLetterOverlay {
+    font-size: .7em; } 
+	
+#mobile { display: inline; }
+
+#desktop { display: none; }
+
+}
